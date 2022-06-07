@@ -5,7 +5,7 @@ const {User} = require('../db')
 
 const verifyToken = async (req, res, next)=>{
     try {
-        const token = req.headers['x-access-token']
+        const token = req.headers['accesstoken']
     
         if(!token) return res.status(403).send({message: "No token provided"})
     
@@ -25,7 +25,7 @@ const verifyToken = async (req, res, next)=>{
 
 const verifyAdminToken = async (req, res, next)=> {
     try {
-        const token = req.headers['x-access-token']
+        const token = req.headers['accesstoken']
     
         if(!token) return res.status(403).send({message: "No token provided"})
     

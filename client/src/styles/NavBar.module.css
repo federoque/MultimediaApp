@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+@import 'var.css';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--back);
+    color: var(--letters);
+    font-family: var(--font);
+}
+
+.form{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    width: 30vw;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: 2px solid var(--letters)
+}
+
+.form button{
+    width: 5rem;
+}
+
+.form select {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: 2px solid var(--letters);
+}
+
+@media only screen and (max-width: 1050px) {  
+
+    .form button{
+        width: 3rem;
+        font-size: 1rem;
+    }
+    .form input{
+        width: 60vw;
+    }
+}  

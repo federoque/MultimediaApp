@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+@import 'var.css';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--back);
+    color: var(--letters);
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+.card{
+    margin: 0 1rem 3rem 1rem;
+    width: 30vw;
+}
+
+img{
+    height: 70vh;
+    transition: 0.7s;
+}
+
+
+img:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {  
+    h2{
+        font-size: 2rem;
+    }
+
+    img{
+        height: 50vh;
+    }
+
+    .card{
+        margin: 0;
+    }
+
+} 

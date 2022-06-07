@@ -4,10 +4,10 @@ const {getContent, createContent, contentDetail, updateContent, deleteContent} =
 const {verifyToken, verifyAdminToken} = require('../midlewares/verifytoken')
 
 
-router.get('/', getContent)
-router.get('/:id', contentDetail)
-router.post('/', createContent)
-router.delete('/:id', deleteContent)
-router.patch('/:id', updateContent)
+router.get('/', verifyToken, getContent)
+router.get('/:id', verifyToken, contentDetail)
+router.post('/', verifyAdminToken, createContent)
+router.delete('/:id', verifyAdminToken, deleteContent)
+router.patch('/:id', verifyAdminToken, updateContent)
 
 module.exports = router

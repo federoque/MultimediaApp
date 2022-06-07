@@ -2,6 +2,7 @@ const {Content, User, Qualification} = require('../db.js')
 
 const qualificate = async (req,res) => {
     try {
+       
         const {userId, contentId, qualification} = req.body
 
         const user = await User.findOne({

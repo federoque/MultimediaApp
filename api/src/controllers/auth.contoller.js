@@ -55,7 +55,7 @@ const signIn = async (req, res) => {
         expiresIn: 86400
     })
 
-    res.status(200).send({token})
+    res.status(200).send({token, user:findUser.NAME, role: findUser.ROLE})
 }
 
 const signUpAdmin = async()=>{

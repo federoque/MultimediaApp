@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+@import 'var.css';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--back);
+    color: var(--letters);
+    font-family: var(--font);
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+}
+
+.paginado {
+    display: flex;
+    margin:auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.paginado button{
+    height: 2rem;
+    width: 6vw;
+}
+
+.paginado span{
+    width: 6rem;
+    font-size: 1.5rem;
+}
+
+.limpiarfiltros{
+    width: 5rem;
+    margin-bottom: 20px;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 1050px) {  
+    .paginado button{
+        height: 2rem;
+        width: 10vw;
+    }
+    
+    .paginado span{
+        width: 6rem;
+        font-size: 1.5rem;
+    }
+    
+    .limpiarfiltros{
+        width: 5rem;
+    }
+}  
+
+@media only screen and (max-width: 700px) {  
+    .paginado button{
+        height: 2rem;
+        width: 15vw;
+        font-size: 1rem;
+    }
+
+    .paginado span{
+        width: 10vw;
+        font-size: 1rem;
+    }
+    
+    .limpiarfiltros{
+        width: 5rem;
+    }
+    
+}  

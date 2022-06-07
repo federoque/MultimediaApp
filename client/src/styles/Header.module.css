@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grape+Nuts&display=swap');
+@import 'var.css';
+
+
+
+.container{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.container button{
+    font-size: 1rem;
+    height: 1.8rem;
+    width: 6rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+

@@ -1,12 +1,12 @@
 const {Category} = require('../db')
 const categories = [
-    'Action',
-    'Comedy',
+    'Accion',
+    'Comedia',
     'Drama',
-    'Fantasy',
-    'Horror',
-    'Mistery',
+    'Fantasia',
+    'Misterio',
     'Romance',
+    'Terror',
     'Thriller',
     'Western'
 ]
@@ -21,4 +21,7 @@ const fillCategories = () => {
     })
 }
 
-module.exports = fillCategories
+module.exports = {
+    fillCategories,
+    categories
+}
