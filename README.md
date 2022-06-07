@@ -1,8 +1,8 @@
-#MultimediaAPP-(Basado en Netflix)
+# MultimediaAPP-(Basado en Netflix)
 
 Clonar el Repositorio en un directorio local.
 
-##BackEnd
+## BackEnd
 
 - Crear archivo `.env` en la raiz de la carpeta `/api`
 *Crear base datos en la consola de PostgreSQL mediante el comando:
@@ -24,7 +24,7 @@ npm start
 
 n>`npm install --force` en caso de que ocurra algun error a la hora de la instalación <br/>
 
-##FrontEnd
+## FrontEnd
 
 
 - Parado en la raiz de la carpeta `/client` ejecutar: 
