@@ -4,7 +4,7 @@ Clonar el Repositorio en un directorio local.
 
 ##BackEnd
 
-*Crear archivo .env en la raiz de la carpeta /api
+- Crear archivo `.env` en la raiz de la carpeta `/api`
 *Crear base datos en la consola de PostgreSQL mediante el comando:
    create database "NOMBRE_DE_TU_DB"
 *En este colocar nuestras variables de entorno (tanto para la creación de la base de datos en Post)
